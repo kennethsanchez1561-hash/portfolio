@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth Sanchez | Full Stack Developer</title>
+    <meta name="description" content="Kenneth Sanchez — Full Stack Developer building fast, scalable web applications with the MERN stack.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kenneth Sanchez | Full Stack Developer">
+    <meta property="og:description" content="Building scalable web apps with React, Node.js & MongoDB. Available for freelance & full-time roles.">
+    <meta property="og:image" content="images/pfp.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kenneth Sanchez | Full Stack Developer">
+    <meta name="twitter:description" content="Building scalable web apps with React, Node.js & MongoDB.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Devicons — official brand SVG logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+</head>
+<body>
+    <!-- Scroll progress bar -->
+    <div id="scroll-progress"></div>
+    <!-- Back to top -->
+    <button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-profile">
+            <div class="avatar-ring">
+                <img src="images/pfp.jpg" alt="Kenneth" class="avatar-photo">
+                <span class="avatar-dot"></span>
+            </div>
+            <div class="avatar-info">
+                <span class="avatar-name">Kenneth</span>
+                <span class="avatar-role">Full Stack Dev</span>
+            </div>
+        </a>
+        <div class="nav-links" style="position:relative;">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <div class="theme-menu" id="themeMenu">
+                <button class="theme-option" data-theme="dark"><i class="fa-solid fa-moon"></i> Dark</button>
+                <button class="theme-option" data-theme="light"><i class="fa-solid fa-sun"></i> Light</button>
+            </div>
+            <button class="menu-btn" id="settingsToggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- ① HERO -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="line-decorator"></div>
+                <p class="hero-eyebrow">Full Stack Developer</p>
+                <h1>I'm <span class="text-blue">Kenneth</span>,<br>I Build the Web.</h1>
+                <p class="hero-desc">I build scalable, high-performance web applications using modern technologies. Clean code, fast delivery, real results.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="cta-btn primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="cta-btn secondary">Contact Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img src="images/pfp.jpg" alt="Kenneth Sanchez" class="hero-portrait">
+                <!-- Floating code card -->
+                <div class="floating-card code-card">
+                    <span class="code-line"><span class="c-blue">const</span> dev = {</span>
+                    <span class="code-line">&nbsp;&nbsp;name: <span class="c-green">"Kenneth"</span>,</span>
+                    <span class="code-line">&nbsp;&nbsp;stack: <span class="c-green">"MERN"</span>,</span>
+                    <span class="code-line">&nbsp;&nbsp;open: <span class="c-blue">true</span></span>
+                    <span class="code-line">};</span>
+                </div>
+                <!-- Floating status card -->
+                <div class="floating-card status-card">
+                    <span class="status-dot"></span>
+                    <span>Available for work</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ② ABOUT -->
+    <section class="about-section" id="about">
+        <div class="about-container fade-in">
+            <div class="about-left">
+                <span class="section-label"><span class="text-blue">/</span> ABOUT ME</span>
+                <h2>Building Products<br>People Actually Use</h2>
+                <p>I'm a <strong>Full Stack Developer</strong> with <strong>3+ years</strong> of experience building responsive, scalable web applications from idea to deployment.</p>
+                <p style="margin-top:1rem;">I specialize in the <strong>MERN stack</strong> — MongoDB, Express, React, and Node.js — and I care deeply about performance, code quality, and great user experience.</p>
+                <p style="margin-top:1rem;">I've shipped <strong>20+ projects</strong> ranging from e-commerce stores to analytics dashboards. Currently open to new opportunities.</p>
+            </div>
+            <div class="about-right">
+                <div class="stat-box">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-text">Years of<br>Experience</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-text">Projects<br>Shipped</span>
+                </div>
+                <div class="available-badge">
+                    <span class="status-dot"></span>
+                    <span>Open to freelance &amp; full-time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ③ WHAT I DO -->
+    <section class="services-section fade-in">
+        <div class="section-container">
+            <div class="section-header centered">
+                <span class="section-label"><span class="text-blue">/</span> WHAT I DO</span>
+                <h2>How I Can Help You</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card dark-card">
+                    <div class="service-icon"><i class="fa-solid fa-display"></i></div>
+                    <h3>Frontend Dev</h3>
+                    <p>Pixel-perfect, responsive UIs built with React and modern CSS. Fast, accessible, and beautiful.</p>
+                </div>
+                <div class="service-card dark-card">
+                    <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Backend Dev</h3>
+                    <p>Robust REST APIs, authentication systems, and database architecture with Node.js and Express.</p>
+                </div>
+                <div class="service-card dark-card">
+                    <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Full Stack Apps</h3>
+                    <p>End-to-end web applications — from database design to deployment. I own the whole stack.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ④ FEATURED PROJECTS -->
+    <section class="projects-section fade-in" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label"><span class="text-blue">/</span> WORK</span>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <!-- Big featured card -->
+            <div class="project-featured dark-card">
+                <div class="pf-text">
+                    <span class="project-tag">React · Node.js · MongoDB · Stripe</span>
+                    <h3>E-Commerce Platform</h3>
+                    <p>A fully-featured online store with product listings, shopping cart, Stripe checkout, and a real-time admin dashboard for inventory and order management.</p>
+                    <div class="project-links">
+                        <a href="#" class="cta-btn primary" style="font-size:0.78rem; padding:0.7rem 1.5rem;">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="link-arrow"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="pf-image">
+                    <img src="images/project_ecommerce.png" alt="E-Commerce Platform" class="project-img-real">
+                </div>
+            </div>
+
+            <!-- Smaller project grid -->
+            <div class="projects-grid">
+                <div class="project-card dark-card">
+                    <div class="project-card-img">
+                        <img src="images/project_analytics.png" alt="Analytics Dashboard">
+                    </div>
+                    <span class="project-tag">React · Express · MySQL</span>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Real-time data visualization with interactive charts, role-based access, and CSV export.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-arrow">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="link-arrow"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-card dark-card">
+                    <div class="project-card-img">
+                        <img src="images/project_taskapi.png" alt="Task Manager API">
+                    </div>
+                    <span class="project-tag">Node.js · JWT · MongoDB</span>
+                    <h3>Task Manager API</h3>
+                    <p>Scalable REST API with JWT auth, role-based access control, and WebSocket notifications.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-arrow">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="link-arrow"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-card dark-card">
+                    <div class="project-card-img">
+                        <img src="images/project_portfolio_builder.png" alt="Portfolio Builder">
+                    </div>
+                    <span class="project-tag">React · Firebase · CSS</span>
+                    <h3>Portfolio Builder</h3>
+                    <p>A drag-and-drop portfolio generator with live preview, template selection, and Firebase hosting.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-arrow">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="link-arrow"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑤ SKILLS -->
+    <section class="lists-section fade-in" id="skills">
+        <div class="lists-container">
+            <div class="lists-header">
+                <h2>Tech Stack &amp;<br>Tools I Use</h2>
+                <a href="#contact" class="link-arrow get-in-touch">Hire me <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="lists-grid">
+
+                <!-- FRONTEND -->
+                <div class="list-column">
+                    <h5 class="list-title">FRONTEND</h5>
+                    <div class="tech-badges">
+                        <div class="tech-badge">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-typescript-plain colored"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACKEND -->
+                <div class="list-column">
+                    <h5 class="list-title">BACKEND</h5>
+                    <div class="tech-badges">
+                        <div class="tech-badge">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-express-original"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOOLS -->
+                <div class="list-column">
+                    <h5 class="list-title">TOOLS</h5>
+                    <div class="tech-badges">
+                        <div class="tech-badge">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-postman-plain colored"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑤b EXPERIENCE TIMELINE -->
+    <section class="timeline-section fade-in">
+        <div class="timeline-container">
+            <div class="timeline-header">
+                <div>
+                    <span class="section-label"><span class="text-blue">/</span> EXPERIENCE</span>
+                    <h2>Where I've Worked</h2>
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 &mdash; Present</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <span class="timeline-company">Freelance &mdash; Remote</span>
+                        <p>Building end-to-end web applications for clients across e-commerce, SaaS, and fintech. Delivering scalable MERN stack solutions with a focus on performance and clean architecture.</p>
+                        <span class="timeline-badge">MERN Stack</span>
+                        <span class="timeline-badge">Freelance</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 &mdash; 2023</div>
+                    <div class="timeline-content">
+                        <h3>Junior Web Developer</h3>
+                        <span class="timeline-company">Tech Agency &mdash; Remote</span>
+                        <p>Developed and maintained React-based dashboards and REST APIs for multiple client projects. Collaborated in Agile sprints, conducted code reviews, and improved page load performance by 40%.</p>
+                        <span class="timeline-badge">React</span>
+                        <span class="timeline-badge">Node.js</span>
+                        <span class="timeline-badge">Agile</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 &mdash; 2022</div>
+                    <div class="timeline-content">
+                        <h3>BS Information Technology</h3>
+                        <span class="timeline-company">University &mdash; Philippines</span>
+                        <p>Graduated with honors. Focused on software engineering, data structures, and web development. Led the capstone project — a full-stack student portal adopted by the department.</p>
+                        <span class="timeline-badge">Education</span>
+                        <span class="timeline-badge">Capstone Lead</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑤c SKILL PROFICIENCY BARS -->
+    <section class="skills-bars-section fade-in">
+        <div class="skills-bars-container">
+            <div class="skills-bars-left">
+                <span class="section-label"><span class="text-blue">/</span> PROFICIENCY</span>
+                <h2>How Deep I Go</h2>
+                <p>Years of real-world shipping have sharpened these skills. Percentages reflect confidence and depth, not just familiarity.</p>
+            </div>
+            <div class="skill-bars-list" id="skill-bars">
+                <div class="skill-bar-item" data-pct="92">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name"><i class="devicon-react-original colored"></i> React</span>
+                        <span class="skill-bar-pct">92%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-bar-item" data-pct="88">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span class="skill-bar-pct">88%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-bar-item" data-pct="85">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span class="skill-bar-pct">85%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-bar-item" data-pct="80">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span class="skill-bar-pct">80%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-bar-item" data-pct="72">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                        <span class="skill-bar-pct">72%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-bar-item" data-pct="70">
+                    <div class="skill-bar-top">
+                        <span class="skill-bar-name"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                        <span class="skill-bar-pct">70%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑥ STATS -->
+    <section class="stats-section fade-in">
+        <div class="section-container">
+            <div class="stats-grid">
+                <div class="stat-big">
+                    <span class="stat-big-number text-blue">3+</span>
+                    <span class="stat-big-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-big">
+                    <span class="stat-big-number text-blue">20+</span>
+                    <span class="stat-big-label">Projects Completed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-big">
+                    <span class="stat-big-number text-blue">10+</span>
+                    <span class="stat-big-label">Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-big">
+                    <span class="stat-big-number text-blue">100%</span>
+                    <span class="stat-big-label">Commitment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑥b TESTIMONIALS -->
+    <section class="testimonials-section fade-in">
+        <div class="testimonials-container">
+            <span class="section-label"><span class="text-blue">/</span> TESTIMONIALS</span>
+            <h2>What People Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-quote">&ldquo;Kenneth delivered our e-commerce platform two weeks ahead of schedule. The code quality was exceptional &mdash; clean, well-documented, and easy to extend. Genuinely one of the best developers I've worked with.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar ta-blue">MS</div>
+                        <div class="testimonial-author-info">
+                            <strong>Maria Santos</strong>
+                            <span>Founder, ShopLocal PH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-quote">&ldquo;Our analytics dashboard went from a slow, buggy mess to a lightning-fast tool our whole team loves. Kenneth completely transformed the architecture and was communicative throughout the entire project.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar ta-green">JR</div>
+                        <div class="testimonial-author-info">
+                            <strong>James Reyes</strong>
+                            <span>CTO, DataPulse Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-quote">&ldquo;Hired Kenneth to build our REST API from scratch. He delivered a secure, well-structured backend with full documentation. Super professional, great communicator, and very detail-oriented.&rdquo;</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar ta-purple">AL</div>
+                        <div class="testimonial-author-info">
+                            <strong>Anna Lim</strong>
+                            <span>Product Manager, Taskly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-hero-section fade-in" id="blog" style="padding-top: 6rem;">
+        <div class="blog-hero-container">
+            <!-- Left Side -->
+            <div class="hero-left">
+                <div class="line-decorator"></div>
+                <h2 class="mb-4">My <span class="text-blue">Blog</span></h2>
+                <p class="hero-desc">Sharing my thoughts on full-stack development, MERN stack best practices, and building scalable web products from the ground up.</p>
+
+                <div class="inline-stats mt-large">
+                    <div class="stat-box">
+                        <span class="stat-number">3<span class="text-blue">+</span></span>
+                        <span class="stat-text">Years of<br>experience</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">20<span class="text-blue">+</span></span>
+                        <span class="stat-text">Successful<br>projects</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side (Circular Portrait) -->
+            <div class="blog-hero-right" style="animation-delay: 0.2s;">
+                <div class="circle-portrait">
+                    <span>[ Photo ]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <section class="blog-content-section fade-in">
+        <div class="blog-cards-container">
+            <!-- Code Card -->
+            <div class="blog-card dark-card">
+                <div class="blog-card-content">
+                    <p style="color: #c975d9;">&lt;div <span style="color: #61afef;">class</span>=<span
+                            style="color: #98c379;">"container"</span>&gt;</p>
+                    <p style="padding-left: 1rem; color: #d19a66;">&lt;h1&gt;<span style="color: #e5c07b;">Full Stack dev</span>&lt;/h1&gt;</p>
+                    <p style="color: #c975d9;">&lt;/div&gt;</p>
+                </div>
+            </div>
+
+            <!-- Digital Products Card -->
+            <div class="blog-card light-card">
+                <div class="blog-card-content text-dark">
+                    <h4 style="color: #1a1a1a;">Web Architecture</h4>
+                    <p style="color: #555;">Deep dives into React optimization, Node.js performance, and database scaling strategies.</p>
+                    <div class="app-icons mt-4">
+                        <i class="fa-brands fa-react" style="color: #61DBFB;"></i>
+                        <i class="fa-brands fa-node-js" style="color: #3C873A;"></i>
+                        <i class="fa-brands fa-github" style="color: #181717;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑦ CTA BAND -->
+    <section class="cta-section fade-in">
+        <div class="cta-band">
+            <h2>Let's Build Something<br><span class="text-blue">Great Together.</span></h2>
+            <p>I'm currently open to freelance projects, full-time roles, and creative collaborations.</p>
+            <a href="#contact" class="cta-btn primary" style="margin-top:2rem;">Start a Conversation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- ⑧ CONTACT -->
+    <section class="about-section fade-in" id="contact">
+        <div class="about-container">
+            <div class="about-left">
+                <span class="section-label"><span class="text-blue">/</span> CONTACT</span>
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or just want to chat? I&rsquo;d love to hear from you. I usually respond within 24 hours.</p>
+                <div class="contact-links" style="margin-top:2rem;">
+                    <div style="display:flex;align-items:center;gap:0.5rem;">
+                        <a href="mailto:your@email.com" class="contact-link" id="email-link">
+                            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span>your@email.com</span>
+                        </a>
+                        <button class="copy-email-btn" id="copy-email-btn" title="Copy email"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                    <a href="#" class="contact-link">
+                        <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+                        <span>github.com/yourgithub</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                        <span>linkedin.com/in/yourlinkedin</span>
+                    </a>
+                </div>
+            </div>
+            <div class="about-right" style="flex-direction:column;align-items:stretch;gap:0;">
+                <form class="contact-form" id="contact-form" id="contact-form-inner">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <div class="form-submit-row">
+                        <button type="submit" class="cta-btn primary" id="form-submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        <span id="form-status"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑨ FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom:1rem;">K / S</div>
+                <p class="text-gray">Building modern web experiences,<br>one project at a time.</p>
+            </div>
+            <div class="footer-col">
+                <h5>NAVIGATE</h5>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#blog">Blog</a>
+            </div>
+            <div class="footer-col">
+                <h5>SOCIAL</h5>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="footer-col">
+                <h5>CONTACT</h5>
+                <a href="mailto:your@email.com" class="text-blue">your@email.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="text-gray">© 2026 Kenneth Sanchez — Full Stack Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

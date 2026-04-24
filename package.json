@@ -1,0 +1,16 @@
+{
+  "name": "kenneth-portfolio",
+  "version": "1.0.0",
+  "description": "Kenneth Sanchez Portfolio with Ken AI chatbot",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5"
+  }
+}
